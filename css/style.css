@@ -1,0 +1,41 @@
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container1 {
+    width: 40%;
+    overflow: auto;
+}
+
+button {
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    box-shadow: 1px 3px 4px 0px #829192;
+    background-color: antiquewhite;
+    color: #535b5e;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    animation: left to right;
+}
+
+button:hover {
+    background-color: #e48f8f;
+    color: deepskyblue;
+}
+
+p {
+    font-family: verdana;
+}
+
+#constant {
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: none;
+}

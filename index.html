@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Css Generator </title>
+    <!--    font awesom link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!--bootstrap link-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--    css link here-->
+    <link href="css/style.css" rel="stylesheet" /> </head>
+
+<body class="h-100">
+    <!--   sample text here-->
+    <section class="float-left">
+        <div class="d-flex justify-content-center py-4">
+            <p class="heading" id="heading">Sample</p>
+        </div>
+    </section>
+    <!--button start here-->
+    <div class="container1 d-flex justify-content-center float-left">
+        <div class="row ">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <button onclick="fontsize()"><i class="fas fa-plus"></i></button>
+                <button class="mx-3" id="constant" contenteditable="true" ondblclick="text()">16px</button>
+                <button onclick="fontsizemi()"><i class="fas fa-minus"></i></button>
+            </div>
+            <!-- fontcolor here-->
+            <div class="col-12 d-flex justify-content-center py-4">
+                <button onclick="fontred()">R</button>
+                <button class="mx-3" onclick="fontgreen()">G</button>
+                <button onclick="fontblue()">B</button>
+            </div>
+            <!--backgroound-color here-->
+            <div class="col-12 d-flex justify-content-center py-4">
+                <button onclick="bgred()">BR</button>
+                <button class="mx-3" onclick="bggreen()">BG</button>
+                <button onclick="bgblue()">BB</button>
+            </div>
+            <!--padding Css here-->
+            <div class="col-12 d-flex justify-content-center py-4 text-center">
+                <div class="pt ">
+                    <button onclick="padtop()"><i class="fas fa-plus"></i></button>
+                    <p>PT</p>
+                    <button onclick="padtopminus()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="pl mx-3">
+                    <button onclick="padleft()"><i class="fas fa-plus"></i></button>
+                    <p>PL</p>
+                    <button onclick="padleftminus()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="pr ">
+                    <button onclick="padright()"><i class="fas fa-plus"></i></button>
+                    <p>PR</p>
+                    <button onclick="padrightminus()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="pb mx-3">
+                    <button onclick="padbot()"><i class="fas fa-plus"></i></button>
+                    <p>PB</p>
+                    <button onclick="padbotminus()"><i class="fas fa-minus"></i></button>
+                </div>
+            </div>
+            <!-- padding all here-->
+            <div class="col-12 d-flex justify-content-center py-4 align-items-center">
+                <button onclick="padall()"><i class="fas fa-plus"></i></button>
+                <p class="mx-3">PA</p>
+                <button onclick="padallminus()"><i class="fas fa-minus"></i></button>
+            </div>
+            <!-- margin Css Here-->
+            <div class="col-12 d-flex justify-content-center py-4 text-center">
+                <div class="mt">
+                    <button onclick="marTop()"><i class="fas fa-plus"></i></button>
+                    <p>MT</p>
+                    <button onclick="marTopminus()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="ml mx-3">
+                    <button onclick="marleft()"><i class="fas fa-plus"></i></button>
+                    <p>ML</p>
+                    <button onclick=" marleftminus()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="mr ">
+                    <button onclick="marright()"><i class="fas fa-plus"></i></button>
+                    <p>MR</p>
+                    <button onclick="marrightminus()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="mb mx-3">
+                    <button onclick="marbot()"><i class="fas fa-plus"></i></button>
+                    <p>MB</p>
+                    <button onclick="marbotminus()"><i class="fas fa-minus"></i></button>
+                </div>
+            </div>
+            <!--            margin all here-->
+            <div class="col-12 d-flex justify-content-center py-4 align-items-center">
+                <button onclick="marginall()"><i class="fas fa-plus"></i></button>
+                <p class="mx-3">MA</p>
+                <button onclick="marginallmin()"><i class="fas fa-minus"></i></button>
+            </div>
+        </div>
+    </div>
+    <!--  new section-->
+    <div class="container2 ">
+        <div class="row">
+            <!-- border-radius here-->
+            <div class="col-12 d-flex justify-content-center py-4 text-center">
+                <div class="btr">
+                    <button onclick="btr()"><i class="fas fa-plus"></i></button>
+                    <p>BTR</p>
+                    <button onclick="btrmi()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="btl mx-3">
+                    <button onclick="btl()"><i class="fas fa-plus"></i></button>
+                    <p>BTL</p>
+                    <button onclick="btlmi()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="bbr">
+                    <button onclick="bbr()"><i class="fas fa-plus"></i></button>
+                    <p>BBR</p>
+                    <button onclick="bbrmi()"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="BBR mx-3">
+                    <button onclick="bbl()"><i class="fas fa-plus"></i></button>
+                    <p>BBL</p>
+                    <button onclick="bblmi()"><i class="fas fa-minus"></i></button>
+                </div>
+            </div>
+            <!--  border-radius All-->
+            <div class="col-12 d-flex justify-content-center py-4 align-items-center">
+                <button onclick="bra()"><i class="fas fa-plus"></i></button>
+                <p class="mx-3">BA</p>
+                <button onclick="brami()"><i class="fas fa-minus"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
